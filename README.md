@@ -34,19 +34,19 @@ reconx **gracefully skips** any module whose tool is not installed, so you can u
 
 ```bash
 # Full pipeline (all modules)
-reconx example.com
+prowler example.com
 
 # Only subdomain enumeration + HTTP probe
-reconx example.com --modules subdomains,probe
+prowler example.com --modules subdomains,probe
 
 # Full pipeline with directory fuzzing
-reconx example.com --wordlist /usr/share/wordlists/dirb/common.txt
+prowler example.com --wordlist /usr/share/wordlists/dirb/common.txt
 
 # Passive only (no nmap / ffuf)
-reconx example.com --passive
+prowler example.com --passive
 
 # Custom output directory and thread count
-reconx example.com --output-dir ./my_recon --threads 100
+prowler example.com --output-dir ./my_recon --threads 100
 ```
 
 ### Flags
