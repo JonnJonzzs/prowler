@@ -1,4 +1,4 @@
-# reconx
+# prowler
 
 Automated recon pipeline for bug bounty hunting. Wraps `subfinder`/`amass`, `nmap`, `httpx`, and `ffuf` into a single command with live terminal output and an HTML report.
 
